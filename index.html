@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>斐讯云音乐</title>
+    <link rel="apple-touch-icon" sizes="114x114" href="//oop9roh1a.bkt.clouddn.com/icon.png">
+    <meta name="full-screen" content="yes">
+    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
+    <meta name="theme-color" content="#4DBA87">
+
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      function requestFullScreen() {
+        var de = document.documentElement
+        if (de.requestFullscreen) {
+          de.requestFullscreen()
+        } else if (de.mozRequestFullScreen) {
+          de.mozRequestFullScreen()
+        } else if (de.webkitRequestFullScreen) {
+          de.webkitRequestFullScreen()
+        }
+      }
+      requestFullScreen()
+    </script>
+  </body>
+</html>
